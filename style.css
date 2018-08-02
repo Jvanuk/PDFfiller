@@ -1,0 +1,36 @@
+.wrapper {
+  width: 200px;
+}
+.main, .secondary {
+  display: block;
+  border: 0;
+  background-color: #ddd;
+  padding: 8px;
+  width: 200px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.main:nth-child(odd), .secondary:nth-child(odd) {
+  background-color: #eee;
+}
+
+.secondary {
+  padding-left: 32px;
+}
+
+.main ~ .secondary {
+  display: none;
+}
+
+.main:focus {
+  outline: 0;
+}
+
+.main:focus ~ .secondary{
+  display: block;
+}
+
+.folder-wrapper:nth-child(odd) .main {
+  background-color: #ddd;
+}
