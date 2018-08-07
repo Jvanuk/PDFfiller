@@ -1,0 +1,116 @@
+<html lan="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-http-equiv="X-Ua-Compatible" content="ie=edge">
+  <title> TEASTING</title>
+  </head>
+  <body>
+
+    <script>
+
+    var year = prompt('Сколько вам лет?');
+       if (year < 18)
+         {
+           alert ('Bye Kid');
+           throw "stop"
+         }
+     var name = prompt('Введите ваше имя');
+     if (name == '')
+         {
+         alert('Вeдите имя правильно!');
+         }
+         else
+           {
+             var info = confirm('Добрый день, ' + name + ' хотите добавить еще информацию о себе?');
+             if (info == true )
+               {
+                 var email = prompt ('Введите ваш имейл')
+                 alert('Поздравляем ' + name + ' Вам ' + year + ' лет и ваш имейл ' + email)
+               }
+ else alert('Поздравляем ' + name + ' Вам ' + year + ' лет!')
+         }
+
+  //  alert( isAdmin );
+
+
+    //  alert( name );
+
+
+
+
+
+/* Операторы условий
+  var num_1 = 23;
+  var num_2 = 45;
+  if (num_1 > num_2) {
+    console.log (num_1 + " > " + num_2);
+  }
+  else if (num_1 == num_2) {
+    console.log (num_1 + "==" + num_2);
+  }
+    else {
+    console.log (num_1 + " < " + num_2);
+  }
+    var bool = true;
+    if (bool) {
+      console.log (bool + "is true");
+    }
+
+
+    //Циклы
+/*    var colors = new Array ("Red", "Blue", "Green");
+    for (var i = 0; i < colors.length; i++) {
+      console.log(colors [i]);
+    }
+
+
+  /*    var i = 20;
+      do {
+        console.log (i);
+      }
+    while (i < 10);
+//    var i = 0;
+//    while (i < 10) {
+//      console.log(i);
+//      i++;
+
+
+/*
+    for (var i = 100; i > 10; i-=5)
+    {
+console.log(i);
+}
+
+
+
+
+      //Массивы
+    /*  var colors = ["Red", "Blue", "Green"];
+        var colors = new Array ("Red", "Blue", "Green");
+        colors.push ("GRAYY");
+      document.write (colors[0] + colors[2]);
+//математические операции
+/*
+      var firstNum = 12;
+      var secondNum = 24;
+      firstNum ++;
+      document.write (Math.ceil (2.3) + "<br>");
+      document.write ("REsultat: ", firstNum - secondNum);
+
+
+
+
+    // работа с переменными
+    /*  var num = 1.45 ;
+      console.log (num);
+      var name = prompt ("what is your name?");
+      console.log ("Your name " + name);
+
+*/
+
+    </script>
+
+
+  </body>
+</html>
