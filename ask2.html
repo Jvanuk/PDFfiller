@@ -1,0 +1,49 @@
+<html lan="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-http-equiv="X-Ua-Compatible" content="ie=edge">
+  <title> TEASTING</title>
+  </head>
+  <body>
+
+    <script>
+
+    var year = prompt('Сколько вам лет?');
+       if (year < 18)
+         {
+           alert ('Bye Kid');
+           throw "stop"
+         }
+     var name = prompt('Введите ваше имя');
+     if (name == '')
+         {
+         alert('Вeдите имя правильно!');
+         }
+         else
+           {
+             var info = confirm('Добрый день, ' + name + ' хотите добавить еще информацию о себе?');
+             if (info == true )
+               {
+                 var city = prompt ('Введите ваш город')
+                 alert('Поздравляем ' + name + ' Ваш возраст ' + year + ' , ваше место жительства ' + city)
+               }
+ else alert('Поздравляем ' + name + ' Ваш возраст ' + year )
+            }
+
+
+         var show = confirm( name + ' вывести в html?');
+          if (show == true )
+{
+document.writeln( 'Добро пожаловать ' + name)
+document.writeln( ', Ваш возраст ' + year ) // + ' место жительства ' + city)
+document.writeln( ', Место жительства ' + city)
+}
+
+
+
+         </script>
+
+
+       </body>
+     </html>
